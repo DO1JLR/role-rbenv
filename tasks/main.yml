@@ -6,3 +6,5 @@
 - include_tasks: versioncheck.yml
   when: submodules_versioncheck|bool
 
+- include_tasks: packages.yml
+

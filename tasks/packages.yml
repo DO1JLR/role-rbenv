@@ -1,0 +1,6 @@
+---
+- name: install required rbenv packages
+  package:
+    name: "{{ rbenv.required_packages }}"
+    state: "{{ rbenv.package_state }}"
+  become: true

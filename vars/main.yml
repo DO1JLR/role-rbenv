@@ -5,3 +5,12 @@ playbook_version_path: 'role-rbenv_roles-ansible_github.com.version'
 
 # variables for rbenv
 _rbenv:
+  required_packages:
+    - libssl-dev
+    - libxml2-dev
+    - libxslt1-dev
+    - libcurl4-openssl-dev
+    - libffi-dev
+    - libreadline-dev
+    - zlib1g-dev
+
