@@ -1,6 +1,6 @@
 ---
 # versionscheck
-playbook_version_number: 5 # should be over ninethousand
+playbook_version_number: 7 # should be over ninethousand
 playbook_version_path: 'role-rbenv_roles-ansible_github.com.version'
 
 # variables for rbenv
@@ -13,4 +13,7 @@ _rbenv:
     - libffi-dev
     - libreadline-dev
     - zlib1g-dev
-
+  package_state: present
+  repo_source: https://github.com/rbenv/rbenv.git
+  repo_path: '~/.rbenv'
+  repo_version: master

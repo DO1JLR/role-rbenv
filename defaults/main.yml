@@ -13,3 +13,6 @@ rbenv:
     - libreadline-dev
     - zlib1g-dev
   package_state: present
+  repo_source: https://github.com/rbenv/rbenv.git
+  repo_path: '~/.rbenv'
+  repo_version: master

@@ -8,3 +8,8 @@
 
 - include_tasks: packages.yml
 
+- name: install rbenv repo
+  git:
+    repo: "{{ rbenv.repo_source }}"
+    dest: "{{ rbenv.repo_path }}"
+    version: "{{ rbenv.repo_version }}"
