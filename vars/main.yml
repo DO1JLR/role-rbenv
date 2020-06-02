@@ -1,0 +1,7 @@
+---
+# versionscheck
+playbook_version_number: 5 # should be over ninethousand
+playbook_version_path: 'role-rbenv_roles-ansible_github.com.version'
+
+# variables for rbenv
+_rbenv:

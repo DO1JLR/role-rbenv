@@ -1,0 +1,8 @@
+---
+- name: combine rbenv configuration
+  set_fact:
+    ranger: "{{ _rbenv|combine(rbenv, recursive=True) }}"
+
+- include_tasks: versioncheck.yml
+  when: submodules_versioncheck|bool
+
