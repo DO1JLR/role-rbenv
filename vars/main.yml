@@ -5,6 +5,7 @@ playbook_version_path: 'role-rbenv_roles-ansible_github.com.version'
 
 # variables for rbenv
 _rbenv:
+  user: "{{ ansible_user_id }}"
   required_packages:
     - libssl-dev
     - libxml2-dev
@@ -17,3 +18,4 @@ _rbenv:
   repo_source: https://github.com/rbenv/rbenv.git
   repo_path: '~/.rbenv'
   repo_version: master
+  bash_conf: "~/.bash_profile"

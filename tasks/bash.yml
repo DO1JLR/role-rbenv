@@ -1,0 +1,8 @@
+---
+
+- name: manage .bash_profile
+  template:
+    src: templates/bash_profile.j2
+    dest: "{{ rbenv.bash_conf }}"
+    backup: yes
+

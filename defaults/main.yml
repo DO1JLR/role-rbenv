@@ -4,6 +4,7 @@
 submodules_versioncheck: false
 
 rbenv:
+  user: "{{ ansible_user_id }}"
   required_packages:
     - libssl-dev
     - libxml2-dev
@@ -16,3 +17,4 @@ rbenv:
   repo_source: https://github.com/rbenv/rbenv.git
   repo_path: '~/.rbenv'
   repo_version: master
+  bash_conf: "~/.bash_profile"

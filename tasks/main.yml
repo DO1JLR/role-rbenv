@@ -13,3 +13,12 @@
     repo: "{{ rbenv.repo_source }}"
     dest: "{{ rbenv.repo_path }}"
     version: "{{ rbenv.repo_version }}"
+  become: true
+  become_user: "{{ rbenv.user }}"
+
+
+- include_tasks: bash.yml
+  apply:
+    become: true
+    become_user: "{{ rbenv.user }}"
+
